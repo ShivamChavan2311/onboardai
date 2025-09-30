@@ -1,0 +1,27 @@
+.message-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.feedback-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.feedback-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.feedback-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.feedback-button.active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
