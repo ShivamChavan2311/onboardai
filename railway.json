@@ -1,10 +1,10 @@
 {
   "build": {
     "builder": "NIXPACKS",
-    "buildCommand": "pip install -r rag_app/requirements.txt"
+    "buildCommand": "pip install -r rag_app/backend/requirements.txt"
   },
   "deploy": {
     "startCommand": "uvicorn main:app --host 0.0.0.0 --port $PORT",
-    "rootDirectory": "rag_app"
+    "rootDirectory": "rag_app/backend"
   }
 }
